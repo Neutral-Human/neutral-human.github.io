@@ -2,3 +2,10 @@
   --bg-color: #FFFFFF;
   --fg-color: #000000;
 }
+body {
+  width: 100vh;
+  height: 100vh;
+}
+#main {
+  position: fixed;
+}
