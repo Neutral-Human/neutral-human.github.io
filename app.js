@@ -1,6 +1,8 @@
 const { createApp,ref } = Vue;
 const app = createApp({
   mounted() {
+    this.social_links = await axios.get("/social_links.json")
+    this.posts = await axios.get("/posts.json")
     console.log("Web page is fully loaded!\nWelcome to my page!")
   },
   data() {
