@@ -1,4 +1,5 @@
 const { createApp,ref } = Vue;
+Vue.use(VueMarkdown);
 const app = createApp({
   async mounted() {
     this.social_links = await axios.get("/social_links.json")
